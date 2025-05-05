@@ -1,0 +1,81 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  text-align: center;
+  width: 200px;
+  background-color: white;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.image {
+  width: 100px;
+  height: 150px;
+  object-fit: contain;
+  margin: 0 auto 1rem;
+}
+
+.title {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.quantityInput {
+  width: 40px;
+  text-align: center;
+
+  /* Hide number input arrows in Chrome, Safari, Edge */
+  -moz-appearance: textfield; /* Firefox only */
+}
+
+.quantityInput::-webkit-outer-spin-button,
+.quantityInput::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Chrome, Safari, Edge */
+  margin: 0;
+}
+
+.addButton {
+  padding: 0.4rem 0.8rem;
+  background-color: #222;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+.addButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.addedMsg {
+  height: 0.8rem;
+  color: green;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  visibility: hidden;
+}
+
+.addedMsg.show {
+  visibility: visible;
+}

@@ -1,0 +1,70 @@
+.container {
+  max-width: 720px;
+  margin: 48px auto;
+  padding: 32px;
+  background-color: #fafafa;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  font-family: system-ui, sans-serif;
+}
+
+.heading {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.empty {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.itemList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 20px;
+  border: 1px solid #eee;
+  transition: box-shadow 0.2s;
+}
+
+.item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.itemTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.itemDetail {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 4px;
+}
+
+.itemPrice {
+  font-weight: 500;
+  color: #000;
+}
+
+.total {
+  margin-top: 32px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+}
