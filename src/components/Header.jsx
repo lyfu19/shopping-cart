@@ -1,13 +1,7 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 
 function Header({ cartCount }) {
-  const navigate = useNavigate();
-
-  const handleCheckout = () => {
-    navigate("/checkout");
-  };
-
   return (
     <header className={styles.header}>
       <nav className={styles.navLinks}>
@@ -20,9 +14,9 @@ function Header({ cartCount }) {
       </nav>
       <div className={styles.cart}>
         <span>🛒 Cart: {cartCount}</span>
-        <button className={styles.checkoutButton} onClick={handleCheckout}>
+        <Link to="/checkout" className={styles.checkoutButton}>
           Go to Checkout
-        </button>
+        </Link>
       </div>
     </header>
   );
